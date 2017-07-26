@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
-namespace ScaffoldingTests
+namespace ScaffoldingTests.Controllers
 {
     public class MvcEmptyController : Controller
     {
