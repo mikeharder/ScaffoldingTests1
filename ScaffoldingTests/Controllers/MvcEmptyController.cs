@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace ScaffoldingTests
 {
-    public class EmptyController : Controller
+    public class MvcEmptyController : Controller
     {
         public IActionResult Index()
         {
