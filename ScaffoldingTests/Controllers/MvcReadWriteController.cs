@@ -40,7 +40,9 @@ namespace ScaffoldingTests.Controllers
         {
             try
             {
-                // TODO: Add insert logic here
+                var id = (from p in _people select p.ID).Max() + 1;
+                var person = new Person() { ID = id, Name = collection["Name"], Age = Int32.Parse(collection["Age"]) };
+                _people.Add(person);
 
                 return RedirectToAction(nameof(Index));
             }
